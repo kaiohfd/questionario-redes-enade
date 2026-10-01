@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Redes em prática · ENADE 2008–2021</title>
+<style>
+:root{color-scheme:light;--ink:#162c3d;--muted:#586c79;--accent:#087b71;--line:#dce5e8;--paper:#fff;--bg:#f3f6f7;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6}*{box-sizing:border-box}body{margin:0;background:var(--bg)}a{color:#096c75;text-underline-offset:4px}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.5}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #de9c32;outline-offset:4px}.skip{position:absolute;top:-100px;background:white;padding:12px;z-index:10}.skip:focus{top:5px}.hero{background:#142f40;color:#fff;padding:32px max(24px,calc((100% - 1180px)/2)) 40px;position:relative}.topline{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #ffffff25;padding-bottom:18px;margin-bottom:34px;font-size:.8rem;letter-spacing:.08em}.badge{color:#8ce0cc}.hero h1{font-size:clamp(2.3rem,5vw,4rem);letter-spacing:-.045em;line-height:1.12;margin:0 0 18px}.hero p{max-width:750px;color:#cfdee7;margin:0}.hero .period{font-size:.8rem;letter-spacing:.15em;color:#8ce0cc;margin-bottom:12px}.stats{display:flex;gap:36px;margin-top:28px}.stats strong{font-size:1.6rem;display:block}.stats span{font-size:.8rem;color:#bbceda}.layout{max-width:1228px;margin:auto;display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;padding:30px 24px}.panel,.question,.result,.intro{background:white;border:1px solid var(--line);border-radius:14px}.panel{padding:22px;position:sticky;top:20px}.panel h2{font-size:1rem;margin:0 0 20px}.field{display:block;font-size:.82rem;font-weight:650;margin:16px 0 5px}select,input[type=search]{width:100%;padding:9px;border:1px solid #bacbd1;border-radius:6px;background:white;color:var(--ink)}.panel p{font-size:.82rem;color:var(--muted)}.panel progress{width:100%;height:8px;accent-color:var(--accent)}.intro{padding:22px 26px;margin-bottom:24px}.intro h2{font-size:1.05rem;margin:0 0 9px}.intro p{font-size:.92rem;margin:8px 0;color:var(--muted)}.count{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:17px;font-size:.9rem;color:var(--muted)}.question{padding:25px 28px;margin:0 0 22px;min-width:0}.question legend{float:left;width:100%;padding:0;margin:8px 0 15px;font-size:1.28rem;font-weight:750;line-height:1.35;letter-spacing:-.02em}.question legend + *{clear:both}.qhead{display:flex;align-items:center;gap:10px;font-size:.76rem;color:var(--muted);flex-wrap:wrap}.tag{background:#eaf5f2;color:#076e64;padding:3px 9px;border-radius:5px;font-weight:650}.origin{font-size:.8rem;color:var(--muted);margin:0 0 18px}.question p{margin:12px 0}.statements{padding-left:28px}.statements li{padding:4px 0 4px 6px}.option{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:9px 0;cursor:pointer;font-size:.94rem}.option:hover{background:#f5f9fa}.option:has(input:checked){border-color:var(--accent);background:#edf8f5}.option input{accent-color:var(--accent);margin-top:6px;flex-shrink:0}.letter{font-weight:750;color:var(--accent);margin-right:6px}.sources{display:flex;gap:16px;font-size:.78rem;margin-top:17px;flex-wrap:wrap}.table-wrap{overflow-x:auto;margin:16px 0}table{border-collapse:collapse;width:100%;font-size:.85rem}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{background:#f2f6f7}caption{text-align:left;font-weight:700;margin-bottom:8px}.btn{border:1px solid #b8cbd1;padding:10px 16px;border-radius:7px;background:white;color:var(--ink);font-weight:650;font-size:.9rem}.primary{background:var(--accent);color:white;border-color:var(--accent)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.wide{width:100%;margin-top:10px}.result{padding:25px;margin-bottom:24px;border-top:4px solid var(--accent)}.result h2{margin:0;font-size:1.65rem}.result p{margin:8px 0}.feedback{background:#f2f7f9;border-left:4px solid #718796;margin:20px 0 4px;padding:14px 17px;font-size:.9rem}.feedback.correct{background:#edf8f1;border-color:#237d50}.feedback.incorrect{background:#fff3ef;border-color:#b7543c}.feedback p{margin:8px 0}.empty{padding:35px;text-align:center}.foot{font-size:.82rem;color:var(--muted);padding:25px 0 35px;border-top:1px solid var(--line)}details{font-size:.85rem}summary{cursor:pointer;font-weight:650}.topic-summary{display:flex;gap:8px;flex-wrap:wrap}.topic-summary span{background:#edf3f5;padding:5px 10px;border-radius:5px;font-size:.82rem}[hidden]{display:none!important}.print-title{display:none}noscript{display:block;padding:20px;background:#fff0d0}@media(max-width:850px){.layout{grid-template-columns:1fr}.panel{position:static}.filters{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.filter-search{grid-column:1/-1}.panel .field{margin-top:8px}.hero{padding:24px 24px 30px}.topline{margin-bottom:25px}}@media(max-width:500px){.layout{padding:18px 12px;gap:18px}.question{padding:20px 18px}.stats{gap:24px}.topline{font-size:.7rem}.question legend{font-size:1.13rem}.option{padding:11px}.count{align-items:flex-start}}@media print{@page{margin:16mm}body{background:white;font-size:10pt}.hero{background:white;color:black;padding:0 0 15px}.hero p,.hero .period{color:#333}.hero h1{font-size:25pt}.topline,.stats,aside,.intro,.actions,.count,.sources,.foot,.skip{display:none!important}.layout{display:block;padding:0}.question{break-inside:avoid;padding:15px;border-radius:0;margin:15px 0}.option{border:0;margin:2px 0;padding:2px}.question legend{font-size:13pt}.print-title{display:block;margin:12px 0}.feedback{break-inside:avoid}.result{break-inside:avoid}.tag{background:none;color:black}}
+</style></head>
+<body><a class="skip" href="#questions">Ir para as questões</a>
+<header class="hero"><div class="topline"><span>CADERNO DE ESTUDOS / ENADE</span><span class="badge">CURSOS TECNOLÓGICOS</span></div><p class="period">EDIÇÕES 2008 · 2011 · 2014 · 2017 · 2021</p><h1>Redes em prática.</h1><p>Dos fundamentos de comunicação ao projeto de redes: uma seleção de questões do Inep para testar conhecimentos e aprender com cada resposta.</p><div class="stats"><div><strong>20</strong><span>questões selecionadas</span></div><div><strong>5</strong><span>edições do ENADE</span></div><div><strong>3</strong><span>cursos tecnológicos</span></div></div></header>
+<noscript>Ative o JavaScript do navegador para visualizar e responder ao questionário interativo.</noscript>
+<div class="layout"><aside aria-label="Filtros e progresso"><div class="panel"><h2>Monte sua revisão</h2><div class="filters"><div><label class="field" for="year">Edição</label><select id="year"><option value="">Todas as edições</option></select></div><div><label class="field" for="course">Curso tecnológico</label><select id="course"><option value="">Todos os cursos</option></select></div><div><label class="field" for="topic">Tema</label><select id="topic"><option value="">Todos os temas</option></select></div><div class="filter-search"><label class="field" for="search">Buscar nas questões</label><input type="search" id="search" placeholder="Ex.: IPv6, TCP, VLAN…"></div></div><button class="btn wide" id="clearFilters" type="button">Limpar filtros</button><hr style="border:0;border-top:1px solid var(--line);margin:23px 0"><p id="progressText" aria-live="polite"></p><progress id="progress" max="20" value="0" aria-label="Progresso total"></progress><p>Responda no seu ritmo. Os filtros preservam suas escolhas nesta sessão.</p><p>As respostas ficam apenas nesta aba e são apagadas ao recarregar ou fechar a página.</p></div></aside>
+<main><section class="intro"><h2>Como usar este caderno</h2><p>Escolha uma alternativa por questão. A correção considera apenas os itens exibidos pelos filtros e apresenta explicações após o envio.</p><details><summary>Sobre a seleção e as fontes</summary><p>São 16 itens de Tecnologia em Redes de Computadores, 3 de Tecnologia em Análise e Desenvolvimento de Sistemas e 1 de Tecnologia em Gestão da Tecnologia da Informação. Esta é uma seleção temática, não um levantamento exaustivo de todas as provas do período.</p><p>Enunciados e alternativas foram resumidos ou adaptados, mantendo o tema e a letra do gabarito oficial. Figuras necessárias foram convertidas em descrições ou tabelas. Cada item oferece acesso à prova e ao gabarito. Não foram incluídos itens anulados. Os comentários são explicações didáticas desta página, não comentários oficiais do Inep.</p><p>O intervalo 2008–2021 corresponde às cinco edições listadas, não a uma prova por ano. Na questão de protocolos web, o cenário foi delimitado a HTTP sobre TCP para evitar confusão com HTTP/3.</p></details></section>
+<div class="print-title">Nome: _____________________________________ Data: ____/____/______</div>
+<div class="count"><strong id="visibleCount" aria-live="polite"></strong><span>Uma alternativa por questão</span></div>
+<section id="result" class="result" tabindex="-1" aria-live="polite" hidden></section>
+<form id="quiz"><div id="questions"></div><div id="empty" class="empty" hidden>Nenhuma questão corresponde aos filtros. Experimente limpar a busca ou selecionar outro tema.</div><div class="actions"><button class="btn primary" type="submit" id="grade">Corrigir seleção</button><button class="btn" type="button" id="restart">Refazer seleção</button><button class="btn" type="button" id="print">Imprimir / salvar PDF</button></div></form>
+<footer class="foot"><p>Material independente de estudo. Fonte das questões: Inep / ENADE. Funciona offline; apenas os links das fontes exigem internet.</p><p>A impressão inclui somente as questões filtradas e, se a correção estiver aberta, seus comentários.</p><a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade/provas-e-gabaritos" target="_blank" rel="noopener noreferrer">Consultar o acervo oficial do Inep ↗</a></footer></main></div>
+<script id="question-data" type="application/json">[
+  {
+    "id": "redes-2008-12",
+    "year": 2008,
+    "original": 12,
+    "course": "Redes de Computadores",
+    "title": "Arquitetura em camadas",
+    "topic": "Fundamentos",
+    "body": "Qual descrição representa adequadamente a relação entre camadas e protocolos?",
+    "options": [
+      "As camadas acumulam funções em um único protocolo cada vez mais complexo.",
+      "O protocolo IP funciona sobre o TCP, ambos padronizados pela ISO.",
+      "Protocolos definem exclusivamente a comunicação entre camadas adjacentes da mesma máquina.",
+      "As camadas foram criadas para separar topologias em barramento de topologias em estrela.",
+      "As camadas promovem modularidade; protocolos implementam suas funções e compõem uma pilha."
+    ],
+    "answer": 4,
+    "comment": "A divisão em camadas separa responsabilidades e facilita a evolução dos protocolos. A comunicação lógica ocorre entre entidades pares; camadas adjacentes interagem por serviços e interfaces.",
+    "page": 8,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/download/Enade2008_RNP/TECNOLOGIA_REDES_COMPUTADORES.pdf",
+    "gabarito": "https://download.inep.gov.br/download/Enade2008_RNP/GABARITO_TECNOLOGIA_EM_REDES_DE_COMPUTADORES.pdf"
+  },
+  {
+    "id": "redes-2008-14",
+    "year": 2008,
+    "original": 14,
+    "course": "Redes de Computadores",
+    "title": "Tempo de transmissão e propagação",
+    "topic": "Desempenho",
+    "body": "Uma sonda envia uma foto de 8 × 10⁶ bytes por um enlace de 128 kbit/s. A distância é 60 × 10⁹ m, e a propagação ocorre a 3 × 10⁸ m/s. Sem nós intermediários e desconsiderando cabeçalhos, quanto tempo leva do início do envio até a recepção completa? Use 1 kbit = 1.000 bits.",
+    "options": [
+      "62,5 s",
+      "200 s",
+      "500 s",
+      "700 s",
+      "1.200 s"
+    ],
+    "answer": 3,
+    "comment": "Transmissão: (8 × 10⁶ × 8)/(128 × 10³) = 500 s. Propagação: (60 × 10⁹)/(3 × 10⁸) = 200 s. Total: 700 s.",
+    "page": 8,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/download/Enade2008_RNP/TECNOLOGIA_REDES_COMPUTADORES.pdf",
+    "gabarito": "https://download.inep.gov.br/download/Enade2008_RNP/GABARITO_TECNOLOGIA_EM_REDES_DE_COMPUTADORES.pdf"
+  },
+  {
+    "id": "redes-2008-18",
+    "year": 2008,
+    "original": 18,
+    "course": "Redes de Computadores",
+    "title": "Controle de congestionamento",
+    "topic": "Transporte",
+    "body": "Onde atua o controle de congestionamento do TCP e qual é sua finalidade principal?",
+    "options": [
+      "No roteador, administrando diretamente suas filas de saída.",
+      "No emissor, exclusivamente para proteger a memória do receptor.",
+      "No emissor, estimando a capacidade disponível e ajustando o envio para não sobrecarregar a rede.",
+      "No receptor, calculando somente a janela anunciada nos ACKs.",
+      "No receptor, eliminando a necessidade de confirmações."
+    ],
+    "answer": 2,
+    "comment": "O emissor ajusta o volume de dados em trânsito à condição percebida da rede. Isso difere do controle de fluxo, que protege a capacidade de recepção do destino.",
+    "page": 9,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/download/Enade2008_RNP/TECNOLOGIA_REDES_COMPUTADORES.pdf",
+    "gabarito": "https://download.inep.gov.br/download/Enade2008_RNP/GABARITO_TECNOLOGIA_EM_REDES_DE_COMPUTADORES.pdf"
+  },
+  {
+    "id": "redes-2008-20",
+    "year": 2008,
+    "original": 20,
+    "course": "Redes de Computadores",
+    "title": "Comunicação entre VLANs",
+    "topic": "Comutação",
+    "body": "Avalie as asserções e a relação entre elas.",
+    "options": [
+      "I e II são verdadeiras, e II justifica I.",
+      "I e II são verdadeiras, mas II não justifica I.",
+      "I é verdadeira e II é falsa.",
+      "I é falsa e II é verdadeira.",
+      "I e II são falsas."
+    ],
+    "answer": 0,
+    "comment": "Um switch de camada 3 pode realizar roteamento IP entre sub-redes associadas a VLANs. Essa capacidade explica a interconexão; um switch que atua apenas na camada 2 não realiza sozinho o roteamento inter-VLAN.",
+    "page": 9,
+    "statements": [
+      "Sub-redes de departamentos podem ser associadas a VLANs diferentes e interligadas por um switch de camada 3.",
+      "Um switch de camada 3 realiza encaminhamento IP entre estações de VLANs distintas."
+    ],
+    "prova": "https://download.inep.gov.br/download/Enade2008_RNP/TECNOLOGIA_REDES_COMPUTADORES.pdf",
+    "gabarito": "https://download.inep.gov.br/download/Enade2008_RNP/GABARITO_TECNOLOGIA_EM_REDES_DE_COMPUTADORES.pdf"
+  },
+  {
+    "title": "Segurança de redes — negação de serviço",
+    "year": 2011,
+    "original": 31,
+    "options": [
+      "Somente I.",
+      "Somente III.",
+      "I e II.",
+      "II e IV.",
+      "III e IV."
+    ],
+    "answer": 2,
+    "comment": "Várias máquinas sobrecarregando um alvo caracterizam DDoS, comprometendo sua disponibilidade. Roubar senhas não é condição necessária para esse ataque.",
+    "id": "ads-2011-31",
+    "course": "Análise e Desenvolvimento de Sistemas",
+    "topic": "Segurança",
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2011/ANALISE_E_DESENVOLVIMENTO_DE_SISTEMAS.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2011/Enade2011_Gab_Def_Tec_Analise_Des_Sistemas.pdf",
+    "page": 16,
+    "statements": [],
+    "bodyHtml": "<p>Um invasor controla diversos computadores comprometidos e os utiliza simultaneamente para sobrecarregar um serviço, tornando-o indisponível. Avalie:<\/p><ol type=\"I\" class=\"statements\"><li>A situação caracteriza um ataque DDoS.<\/li><li>O principal atributo de segurança afetado é a disponibilidade.<\/li><li>O ataque depende do roubo das senhas dos usuários do serviço.<\/li><li>Os programas envolvidos são necessariamente impossíveis de detectar por antivírus.<\/li><\/ol><p>Quais estão corretas?<\/p>",
+    "body": ""
+  },
+  {
+    "id": "redes-2011-11",
+    "year": 2011,
+    "original": 11,
+    "course": "Redes de Computadores",
+    "title": "Coexistência IPv4 e IPv6",
+    "topic": "Endereçamento",
+    "body": "Uma empresa transporta pacotes IPv6 pela infraestrutura IPv4 existente, colocando cada pacote IPv6 dentro de um pacote IPv4. Qual técnica está sendo utilizada?",
+    "options": [
+      "Pilha dupla",
+      "Roteamento",
+      "Tradução",
+      "Store-and-forward",
+      "Tunelamento"
+    ],
+    "answer": 4,
+    "comment": "O tunelamento encapsula um protocolo em outro para atravessar uma infraestrutura intermediária. Pilha dupla executa IPv4 e IPv6; tradução converte a representação entre os protocolos.",
+    "page": 9,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2011/TECNOLOGIA_EM_REDES_DE_COMPUTADORES.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2011/Enade2011_Gab_Def_Tec_Redes_Computadores.pdf"
+  },
+  {
+    "id": "redes-2011-14",
+    "year": 2011,
+    "original": 14,
+    "course": "Redes de Computadores",
+    "title": "Classes de serviço DiffServ",
+    "topic": "Desempenho",
+    "body": "No contexto da questão, deseja-se priorizar tráfego de voz sensível a atraso e tratar navegação web convencional como melhor esforço. Quais comportamentos por salto (PHB) correspondem, respectivamente, a esses serviços?",
+    "options": [
+      "AF e BE",
+      "AF e EF",
+      "BE e AF",
+      "EF e BE",
+      "EF e AF"
+    ],
+    "answer": 3,
+    "comment": "EF (Expedited Forwarding) é associado a baixo atraso, baixo jitter e baixa perda sob condições dimensionadas. BE (Best Effort) atende ao tráfego sem garantias específicas. AF significa Assured Forwarding.",
+    "page": 10,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2011/TECNOLOGIA_EM_REDES_DE_COMPUTADORES.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2011/Enade2011_Gab_Def_Tec_Redes_Computadores.pdf"
+  },
+  {
+    "id": "redes-2011-32",
+    "year": 2011,
+    "original": 32,
+    "course": "Redes de Computadores",
+    "title": "Sessão e apresentação no TCP/IP",
+    "topic": "Fundamentos",
+    "body": "No TCP/IP, em qual camada uma aplicação pode implementar funções equivalentes às de apresentação e sessão do OSI, e quais exemplos correspondem a essas funções?",
+    "options": [
+      "Aplicação: fluxos independentes na mesma conexão TCP e controle de fluxo.",
+      "Aplicação: conversão de representação de caracteres e retomada de uma transferência interrompida.",
+      "Aplicação: conversão de caracteres e controle da taxa para não sobrecarregar o receptor.",
+      "Transporte: fluxos independentes na mesma conexão TCP e controle de fluxo.",
+      "Transporte: conversão de caracteres e retomada de uma transferência interrompida."
+    ],
+    "answer": 1,
+    "comment": "No modelo TCP/IP, essas funcionalidades podem ser tratadas na aplicação. A conversão de representação corresponde à apresentação; a recuperação de uma sessão pode envolver pontos de retomada. Controle de fluxo é uma função de transporte.",
+    "page": 19,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2011/TECNOLOGIA_EM_REDES_DE_COMPUTADORES.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2011/Enade2011_Gab_Def_Tec_Redes_Computadores.pdf"
+  },
+  {
+    "title": "Resolução de nomes — DNS",
+    "year": 2014,
+    "original": 26,
+    "options": [
+      "I e II.",
+      "I e III.",
+      "II e IV.",
+      "I, III e IV.",
+      "II, III e IV."
+    ],
+    "answer": 3,
+    "comment": "O DNS utiliza consultas entre servidores, cache e dados distribuídos. A adoção do IPv6 não substitui a resolução de nomes.",
+    "id": "ads-2014-26",
+    "course": "Análise e Desenvolvimento de Sistemas",
+    "topic": "Serviços",
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/40_tecnologia_analise_desenv_sistemas.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2014/40_gab_tecnologia_analise_desenv_sistemas.pdf",
+    "page": 21,
+    "statements": [],
+    "bodyHtml": "<p>Sobre um serviço DNS utilizado por computadores de uma rede, avalie:<\/p><ol type=\"I\" class=\"statements\"><li>Ao consultar outros servidores, o servidor DNS também assume o papel de cliente.<\/li><li>O IPv6 elimina a necessidade de DNS.<\/li><li>Respostas armazenadas em cache podem evitar novas consultas externas.<\/li><li>A organização do DNS utiliza uma base de dados distribuída.<\/li><\/ol><p>Quais estão corretas?<\/p>",
+    "body": ""
+  },
+  {
+    "id": "redes-2014-9",
+    "year": 2014,
+    "original": 9,
+    "course": "Redes de Computadores",
+    "title": "Switches e roteadores",
+    "topic": "Comutação",
+    "body": "Considere switches de camada 2, roteadores IP e hospedeiros. Quais afirmações estão corretas?",
+    "options": [
+      "Somente I",
+      "Somente IV",
+      "I e II",
+      "II e III",
+      "III e IV"
+    ],
+    "answer": 3,
+    "comment": "Switches de camada 2 encaminham quadros por endereços MAC. Roteadores também processam o cabeçalho da camada de rede e separam domínios de broadcast. I generaliza incorretamente a atuação dos switches; IV nega o isolamento de tráfego.",
+    "page": 14,
+    "statements": [
+      "Switches de camada 2 e hospedeiros usam endereços da camada 3 para encaminhar pacotes.",
+      "Roteadores processam informações de cabeçalho adicionais às examinadas por switches de camada 2.",
+      "Switches de camada 2 usam o endereço de destino do quadro para decidir a interface de saída.",
+      "Roteadores chegam à camada de rede porque não fornecem isolamento de tráfego."
+    ],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/43_tecnologia_redes_computadores.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2014/43_gab_tecnologia_redes_computadores.pdf"
+  },
+  {
+    "id": "redes-2014-11",
+    "year": 2014,
+    "original": 11,
+    "course": "Redes de Computadores",
+    "title": "FTP e transferência segura",
+    "topic": "Serviços",
+    "body": "Sobre o FTP tradicional, sem extensões de segurança, avalie as afirmações.",
+    "options": [
+      "Somente I",
+      "Somente III",
+      "I e IV",
+      "II e III",
+      "II e IV"
+    ],
+    "answer": 3,
+    "comment": "O FTP tradicional utiliza TCP e conexões distintas para controle e dados, sem criptografia própria. Não se limita ao modo binário. SFTP é um protocolo diferente, executado sobre SSH, e oferece proteção criptográfica.",
+    "page": 15,
+    "statements": [
+      "O uso de TCP dispensa o estabelecimento de conexão por handshake de três vias.",
+      "A falta de criptografia torna recomendável uma alternativa segura, como SFTP.",
+      "Há conexões separadas para comandos de controle e transferência de dados.",
+      "Só existe transferência em modo binário."
+    ],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/43_tecnologia_redes_computadores.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2014/43_gab_tecnologia_redes_computadores.pdf"
+  },
+  {
+    "id": "redes-2014-22",
+    "year": 2014,
+    "original": 22,
+    "course": "Redes de Computadores",
+    "title": "SNMP e MIB",
+    "topic": "Gerenciamento",
+    "body": "Avalie as asserções e a relação proposta entre elas.",
+    "options": [
+      "I e II são verdadeiras, e II justifica I.",
+      "I e II são verdadeiras, mas II não justifica I.",
+      "I é verdadeira e II é falsa.",
+      "I é falsa e II é verdadeira.",
+      "I e II são falsas."
+    ],
+    "answer": 1,
+    "comment": "As duas afirmações são verdadeiras. A MIB organiza objetos gerenciados, mas sua existência não demonstra que SNMP seja o protocolo mais utilizado; por isso não justifica a afirmação comparativa I, conforme o gabarito oficial.",
+    "page": 22,
+    "statements": [
+      "No contexto da prova, SNMP é o protocolo mais utilizado na troca de informações e comandos entre a entidade gerenciadora e os agentes de dispositivos.",
+      "Os agentes acessam objetos gerenciados organizados em uma base virtual de informações chamada MIB."
+    ],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2014/43_tecnologia_redes_computadores.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2014/43_gab_tecnologia_redes_computadores.pdf"
+  },
+  {
+    "id": "redes-2017-12",
+    "year": 2017,
+    "original": 12,
+    "course": "Redes de Computadores",
+    "title": "Projeto de redes Top-Down",
+    "topic": "Projeto",
+    "body": "Qual alternativa caracteriza a metodologia Top-Down aplicada ao projeto de redes?",
+    "options": [
+      "Limita-se ao projeto lógico, projeto físico e documentação.",
+      "Impede mudanças após a definição de cada fase.",
+      "Define primeiro os equipamentos e a estrutura física, antes dos requisitos.",
+      "Deixa orçamento e disponibilidade de pessoal fora da análise de requisitos.",
+      "Parte das metas do negócio e das aplicações para definir requisitos e, depois, equipamentos e meios físicos."
+    ],
+    "answer": 4,
+    "comment": "A abordagem começa pelos objetivos e requisitos do cliente. As escolhas físicas devem atender às necessidades levantadas, incluindo restrições, desempenho e aplicações.",
+    "page": 19,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2017/44_TEC_RED_COM_BAIXA.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2017/44_CST_em_Redes_de_Computadores.pdf"
+  },
+  {
+    "id": "redes-2017-13",
+    "year": 2017,
+    "original": 13,
+    "course": "Redes de Computadores",
+    "title": "Campos do cabeçalho IPv6",
+    "topic": "Endereçamento",
+    "body": "Quais afirmações sobre o cabeçalho IPv6 estão corretas?",
+    "options": [
+      "II e IV",
+      "I, II e III",
+      "I, III e V",
+      "III, IV e V",
+      "I, II, IV e V"
+    ],
+    "answer": 3,
+    "comment": "Os endereços IPv6 têm 128 bits e o campo versão contém 6. Next Header identifica o cabeçalho seguinte, que pode ser uma extensão ou um protocolo de transporte. Traffic Class diferencia tráfego, e Hop Limit limita o percurso do pacote.",
+    "page": 19,
+    "statements": [
+      "Os endereços de origem e destino têm 64 bits cada.",
+      "O campo versão, de 4 bits, recebe o valor 32.",
+      "Próximo cabeçalho pode identificar protocolos como TCP ou UDP.",
+      "Classe de tráfego tem 8 bits e permite distinguir tipos de tráfego.",
+      "O limite de saltos é reduzido a cada roteador; seu esgotamento impede o encaminhamento."
+    ],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2017/44_TEC_RED_COM_BAIXA.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2017/44_CST_em_Redes_de_Computadores.pdf"
+  },
+  {
+    "id": "redes-2017-22",
+    "year": 2017,
+    "original": 22,
+    "course": "Redes de Computadores",
+    "title": "Autenticação em diretórios",
+    "topic": "Segurança",
+    "body": "Qual alternativa melhor define a autenticação em um serviço de diretório?",
+    "options": [
+      "Impedir o compartilhamento de privilégios entre bases.",
+      "Conceder acesso de superusuário a todos os serviços.",
+      "Dispensar criptografia e protocolos de autenticação.",
+      "Validar apenas um identificador cadastrado, sem comprovar a identidade de quem o apresenta.",
+      "Verificar a identidade de usuário, dispositivo ou entidade que solicita acesso a recursos."
+    ],
+    "answer": 4,
+    "comment": "Autenticação comprova uma identidade. Autorização determina as operações permitidas. A alternativa D foi reformulada para tornar explícita a diferença entre consultar um cadastro e comprovar a identidade.",
+    "page": 25,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/educacao_superior/enade/provas/2017/44_TEC_RED_COM_BAIXA.pdf",
+    "gabarito": "https://download.inep.gov.br/educacao_superior/enade/gabaritos/2017/44_CST_em_Redes_de_Computadores.pdf"
+  },
+  {
+    "title": "Endereçamento IPv4 e máscara de sub-rede",
+    "year": 2021,
+    "original": 30,
+    "options": [
+      "Configurar o gateway de PROFESSORES03 como 175.16.10.200.",
+      "Atribuir 175.16.30.200 a PROFESSORES01.",
+      "Configurar a máscara de PROFESSORES01 como 255.255.0.0.",
+      "Configurar a máscara de PROFESSORES03 como 255.255.255.0.",
+      "Usar 175.16.30.200 como gateway de PROFESSORES01."
+    ],
+    "answer": 2,
+    "comment": "Com a máscara /16, os três endereços pertencem à rede 175.16.0.0. A configuração do primeiro computador passa a ser compatível com as demais.",
+    "id": "ads-2021-30",
+    "course": "Análise e Desenvolvimento de Sistemas",
+    "topic": "Endereçamento",
+    "prova": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade/provas-e-gabaritos/2021",
+    "gabarito": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_GB_tecnologia_analise_desenvolvimento_sistemas.pdf",
+    "page": 37,
+    "statements": [],
+    "bodyHtml": "<p>Três computadores compartilham uma rede local:<\/p><div class=\"table-wrap\"><table><caption>Configuração dos computadores<\/caption><thead><tr><th scope=\"col\">Computador<\/th><th scope=\"col\">Endereço IPv4<\/th><th scope=\"col\">Máscara<\/th><th scope=\"col\">Gateway<\/th><\/tr><\/thead><tbody><tr><th scope=\"row\">PROFESSORES01<\/th><td>175.16.10.200<\/td><td>255.255.255.0<\/td><td>175.16.1.1<\/td><\/tr><tr><th scope=\"row\">PROFESSORES02<\/th><td>175.16.20.200<\/td><td>255.255.0.0<\/td><td>175.16.1.1<\/td><\/tr><tr><th scope=\"row\">PROFESSORES03<\/th><td>175.16.30.200<\/td><td>255.255.0.0<\/td><td>175.16.1.1<\/td><\/tr><\/tbody><\/table><\/div><p>O primeiro não consegue utilizar a impressora compartilhada pelo terceiro. Qual ajuste resolve a inconsistência?<\/p>",
+    "body": ""
+  },
+  {
+    "id": "gti-2021-12",
+    "year": 2021,
+    "original": 12,
+    "course": "Gestão da Tecnologia da Informação",
+    "title": "Protocolos de uma sessão web segura",
+    "topic": "Serviços",
+    "body": "No contexto da prova, considere acesso a um comércio eletrônico por HTTPS sobre TCP (HTTP/1.1 ou HTTP/2). Qual conjunto corresponde aos protocolos envolvidos?",
+    "options": [
+      "HTTP, SSH e UDP",
+      "HTTP, SSL/TLS e TCP",
+      "HTTP, SSL/TLS e UDP",
+      "WWW, SSL/TLS e IP",
+      "WWW, SSH e TCP"
+    ],
+    "answer": 1,
+    "comment": "A resposta oficial é B. HTTP representa a aplicação, TLS protege a comunicação e TCP oferece transporte confiável nesse cenário. SSL é a nomenclatura histórica presente na alternativa original; sistemas atuais devem usar TLS. HTTP/3 utiliza QUIC sobre UDP e está fora do cenário explicitado nesta adaptação.",
+    "page": 21,
+    "prova": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_tecnologia_gestao_tecnologia_informacao.pdf",
+    "gabarito": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_GB_tecnologia_gestao_tecnologia_informacao.pdf",
+    "statements": []
+  },
+  {
+    "id": "redes-2021-13",
+    "year": 2021,
+    "original": 13,
+    "course": "Redes de Computadores",
+    "title": "Características do TCP",
+    "topic": "Transporte",
+    "body": "Qual alternativa descreve corretamente uma característica do TCP?",
+    "options": [
+      "A abertura e o encerramento de toda conexão usam exatamente o mesmo handshake de três vias.",
+      "Possui mecanismos de controle de congestionamento para ajustar o tráfego à condição da rede.",
+      "Oferece serviço não orientado a conexão.",
+      "A janela deslizante existe para que aplicações independentes compartilhem a mesma conexão.",
+      "Ajustar segmentos ao MTU do enlace local garante ausência de fragmentação em todo o caminho."
+    ],
+    "answer": 1,
+    "comment": "TCP é orientado a conexão e possui controle de congestionamento. A janela deslizante não tem como finalidade multiplexar aplicações, e o MTU local não determina necessariamente o menor MTU de todo o caminho.",
+    "page": 21,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_tecnologia_redes_computadores.pdf",
+    "gabarito": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_GB_tecnologia_redes_computadores.pdf"
+  },
+  {
+    "id": "redes-2021-14",
+    "year": 2021,
+    "original": 14,
+    "course": "Redes de Computadores",
+    "title": "Planejamento de sub-redes",
+    "topic": "Endereçamento",
+    "body": "Uma empresa recebeu 10.1.0.0/22 e propôs as divisões abaixo. Considere endereçamento IPv4 convencional, reservando rede e broadcast. Analise as afirmações.",
+    "options": [
+      "II e IV",
+      "I, II e III",
+      "I, III e V",
+      "III, IV e V",
+      "I, II, IV e V"
+    ],
+    "answer": 3,
+    "comment": "10.1.3.191 é o broadcast de 10.1.3.128/26. A Nuvem 2 (/25) admite 126 hosts, e a Nuvem 3 (/26), 62. Um /24 não comporta 400 estações. Unificar as duas faixas do site principal em 10.1.0.0/23 oferece 510 endereços utilizáveis para os 500 equipamentos, assumindo que possam compartilhar a mesma sub-rede.",
+    "page": 22,
+    "statements": [
+      "10.1.3.191 pode ser atribuído a um equipamento da Nuvem 3.",
+      "Nuvens 2 e 3 possuem, respectivamente, 254 e 62 endereços utilizáveis.",
+      "As faixas das Nuvens 1 e 4 comportam seus equipamentos.",
+      "A divisão proposta não atende a todas as demandas.",
+      "A insuficiência do site principal pode ser corrigida usando uma única rede 10.1.0.0/23."
+    ],
+    "prova": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_tecnologia_redes_computadores.pdf",
+    "gabarito": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_GB_tecnologia_redes_computadores.pdf",
+    "table": {
+      "headers": [
+        "Local",
+        "Sub-rede",
+        "Equipamentos"
+      ],
+      "rows": [
+        [
+          "Principal · servidores",
+          "10.1.0.0/24",
+          "100"
+        ],
+        [
+          "Principal · estações",
+          "10.1.1.0/24",
+          "400"
+        ],
+        [
+          "Nuvem 1",
+          "10.1.2.0/24",
+          "150"
+        ],
+        [
+          "Nuvem 2",
+          "10.1.3.0/25",
+          "80"
+        ],
+        [
+          "Nuvem 3",
+          "10.1.3.128/26",
+          "40"
+        ],
+        [
+          "Nuvem 4",
+          "10.1.3.192/26",
+          "10"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "redes-2021-29",
+    "year": 2021,
+    "original": 29,
+    "course": "Redes de Computadores",
+    "title": "Redes definidas por software",
+    "topic": "Projeto",
+    "body": "A arquitetura SDN separa duas funções fundamentais da rede e utiliza um controlador. Quais são os dois planos separados?",
+    "options": [
+      "Dados e controle",
+      "Controle e fluxo",
+      "Fluxo e gerenciamento",
+      "Dados e gerenciamento",
+      "Gerenciamento e controle"
+    ],
+    "answer": 0,
+    "comment": "O plano de controle determina como o tráfego deve ser encaminhado. O plano de dados executa o encaminhamento conforme as regras instaladas. Essa separação é uma característica central de SDN.",
+    "page": 34,
+    "statements": [],
+    "prova": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_tecnologia_redes_computadores.pdf",
+    "gabarito": "https://download.inep.gov.br/enade/provas_e_gabaritos/2021_GB_tecnologia_redes_computadores.pdf"
+  }
+]</script>
+<script>
+'use strict';
+const questions=JSON.parse(document.getElementById('question-data').textContent);
+const $=id=>document.getElementById(id), letters='ABCDE', answers=new Map();let visible=[...questions], graded=false;
+const norm=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const create=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};
+for(const field of ['year','course','topic']){const values=[...new Set(questions.map(q=>q[field]))].sort((a,b)=>String(a).localeCompare(String(b),'pt-BR',{numeric:true}));for(const value of values){const option=create('option',value);option.value=value;$(field).append(option)}}
+function sourceLink(url,text){const a=create('a',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a}
+function render(){
+ const query=norm($('search').value.trim());visible=questions.filter(q=>(!$('year').value||String(q.year)===$('year').value)&&(!$('course').value||q.course===$('course').value)&&(!$('topic').value||q.topic===$('topic').value)&&(!query||norm([q.title,q.body,q.bodyHtml||'',...q.options,...q.statements,q.topic,q.course].join(' ')).includes(query)));
+ $('questions').replaceChildren();graded=false;$('result').hidden=true;
+ for(const q of visible){const idx=questions.indexOf(q)+1;const field=create('fieldset',undefined,'question');field.id=q.id;field.append(create('legend',`${String(idx).padStart(2,'0')}. ${q.title}`));const top=create('div',undefined,'qhead');top.append(create('span',q.topic,'tag'),create('span',`ENADE ${q.year} · Questão ${q.original} · Adaptada`));field.append(top,create('p','Tecnologia em '+q.course,'origin'));
+ if(q.bodyHtml){const b=create('div');b.innerHTML=q.bodyHtml;field.append(b)}else field.append(create('p',q.body));
+ if(q.table){const wrap=create('div',undefined,'table-wrap'),table=create('table');table.append(create('caption','Plano de endereçamento e demanda'));const head=create('thead'),tr=create('tr');q.table.headers.forEach(t=>{const th=create('th',t);th.scope='col';tr.append(th)});head.append(tr);table.append(head);const body=create('tbody');q.table.rows.forEach(row=>{const tr=create('tr');row.forEach((v,j)=>{const cell=create(j===0?'th':'td',v);if(j===0)cell.scope='row';tr.append(cell)});body.append(tr)});table.append(body);wrap.append(table);field.append(wrap)}
+ if(q.statements.length){const list=create('ol',undefined,'statements');list.type='I';q.statements.forEach(s=>list.append(create('li',s)));field.append(list);if(q.original===20&&q.year===2008||q.original===22&&q.year===2014)field.append(create('p','Considere II como a justificativa proposta para I.'))}
+ q.options.forEach((option,j)=>{const label=create('label',undefined,'option'),input=create('input');input.type='radio';input.name=q.id;input.value=j;input.checked=answers.get(q.id)===j;const span=create('span');span.append(create('span',letters[j]+'.','letter'),document.createTextNode(option));input.addEventListener('change',()=>{answers.set(q.id,j);invalidate();updateProgress()});label.append(input,span);field.append(label)});
+ const sources=create('div',undefined,'sources');sources.append(sourceLink(q.prova+(q.prova.endsWith('.pdf')?'#page='+q.page:''),'Prova original ↗'),sourceLink(q.gabarito,'Gabarito oficial ↗'));field.append(sources);const feedback=create('div',undefined,'feedback');feedback.id='feedback-'+q.id;feedback.hidden=true;field.append(feedback);$('questions').append(field)}
+ $('empty').hidden=visible.length>0;$('grade').disabled=!visible.length;$('restart').disabled=!visible.length;updateProgress();
+}
+function updateProgress(){const count=visible.filter(q=>answers.has(q.id)).length;$('visibleCount').textContent=`${visible.length} questões na seleção · ${count} respondidas`;$('progressText').textContent=`${answers.size} de ${questions.length} respondidas no total`;$('progress').value=answers.size}
+function invalidate(){if(graded){graded=false;$('result').hidden=true;document.querySelectorAll('.feedback').forEach(n=>n.hidden=true)}}
+$('quiz').addEventListener('submit',e=>{e.preventDefault();if(!visible.length)return;let score=0,blank=0;const topics={};for(const q of visible){const value=answers.get(q.id),correct=value===q.answer;if(correct)score++;if(value===undefined)blank++;topics[q.topic]??={correct:0,total:0};topics[q.topic].total++;if(correct)topics[q.topic].correct++;const f=$('feedback-'+q.id);f.replaceChildren();f.className='feedback'+(correct?' correct':value===undefined?'':' incorrect');f.append(create('strong',`${value===undefined?'Não respondida':correct?'Resposta correta':'Resposta incorreta'} · Gabarito ${letters[q.answer]}`),create('p',q.comment));f.hidden=false}const r=$('result');r.replaceChildren(create('h2',`${score} de ${visible.length} acertos`),create('p',`${Math.round(100*score/visible.length)}% de aproveitamento · ${blank} sem resposta. A nota considera todos os itens da seleção atual.`));const row=create('div',undefined,'topic-summary');Object.entries(topics).forEach(([topic,x])=>row.append(create('span',`${topic}: ${x.correct}/${x.total}`)));r.append(row,create('p','Confira o comentário abaixo de cada questão. Alterar uma resposta oculta a correção até o próximo envio.'));r.hidden=false;graded=true;r.focus();r.scrollIntoView({behavior:'smooth',block:'start'})});
+['year','course','topic'].forEach(id=>$(id).addEventListener('change',render));$('search').addEventListener('input',render);$('clearFilters').addEventListener('click',()=>{['year','course','topic','search'].forEach(id=>$(id).value='');render()});$('restart').addEventListener('click',()=>{visible.forEach(q=>answers.delete(q.id));render();$('questions').querySelector('input')?.focus()});$('print').addEventListener('click',()=>window.print());render();
+</script></body></html>
